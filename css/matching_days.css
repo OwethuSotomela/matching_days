@@ -1,0 +1,31 @@
+h3{
+    padding-right: 30px;
+    padding-left: 10px;
+}
+.allDays{
+    text-align: center; 
+    width: 100%;
+    border: 2px solid black;
+}
+.firstD{
+    display: flex;
+    flex-direction: row;
+}
+.secondD{
+    display: flex;
+    flex-direction: row;
+}
+input{
+    width: 150px;
+    height: 15px;
+}
+.red{
+    background: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+
