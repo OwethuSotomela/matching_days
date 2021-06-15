@@ -16,6 +16,7 @@ function Matching(){
     }
 
     function confirmDay(allDays){
+        // alert(allDays)
         allDays = new Date(allDays);
         var day2 = allDays.getDay()
         secondDay =  ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][day2];
@@ -23,7 +24,7 @@ function Matching(){
     }
 
     function compareDays(){
-        console.log(firstday)
+        // console.log(firstday)
         weekdays = [{day:"Sunday", class:""},{day:"Monday", class:""},{day:"Tuesday", class:""},{day:"Wednesday", class:""},{day:"Thursday", class:""},{day:"Friday", class:""},{day:"Saturday", class:""}]
         if (firstday != secondDay && secondDay == "" && firstday != ""){
             weekdays.forEach((verify)=>{
@@ -51,7 +52,6 @@ function Matching(){
             })
             return weekdays
         } else{
-            // weekdays[firstday].class = "green"
             weekdays.forEach((verify)=>{
                 if(verify.day == secondDay){
                     verify.class = "green";

@@ -12,11 +12,9 @@ const days = Matching()
 document.getElementById("weekDays").innerHTML = weekTemplate({ week: days.getWeekDays() });
 
 function myFirstDays() {
-  
-        var firstDateElement = document.querySelector(".firstE").value;
-        days.checkDay(firstDateElement)
-        document.getElementById("weekDays").innerHTML = weekTemplate({ week: days.compareDays() });
-    
+    var firstDateElement = document.querySelector(".firstE").value;
+    days.checkDay(firstDateElement)
+    document.getElementById("weekDays").innerHTML = weekTemplate({ week: days.compareDays() });
 }
 
 function mySecDays() {
